@@ -7,8 +7,8 @@ app = Flask(__name__)
 # Hàm tạo token ngẫu nhiên (20 ký tự)
 def generate_token(length=20):
     return ''.join(secrets.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789') for _ in range(length))
-SQL_url = "https://vqluvnrjixxpfffawkps.supabase.co"
-SQL_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZxbHV2bnJqaXh4cGZmZmF3a3BzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczMzgzMjIzOSwiZXhwIjoyMDQ5NDA4MjM5fQ.AZ8SMebm4F8dRWdg-hv8dMwa997dUcSAVoctAFd9VO0"
+SQL_url = ""
+SQL_key = ""
 # Tạo Supabase client
 
 
@@ -18,9 +18,9 @@ bots = {}
 # Hàm lấy danh sách bots từ API
 def get_token():
     try:
-        url = "https://674c570654e1fca9290c42c7.mockapi.io/api_device"
+        url = ""
         headers = {
-            "Authorization": "674c570654e1fca9290c42c7",
+            "Authorization": "",
             "Content-Type": "application/json"
         }
 
